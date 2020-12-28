@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body{
+    background-color: #ffffff;
+}
+
+.header{
+    display: grid;
+    grid-template-areas: 'left logo right';
+    height: 25vh;
+}
+
+.left{
+    width: 33vh;
+}
+
+.logo{
+    grid-area: logo;
+    /* background-color: #000000; */
+    padding: 5%;
+}
+
+.right{
+    width: 33vh;
+}
+
+.content{
+    display: grid;
+    height: 75vh;
+    grid-template-areas: 'identidad productos contacto';
+}
+
+.init-cont{
+    display: grid;
+    grid-template-areas: 'slideshow'
+    'description-area';
+}
+
+.slide-show{
+    grid-area: slideshow;
+    height: 50vh;
+}
+
+.description{
+    grid-area: description-area;
+    height: 25vh;
+}
+
+.red-cont{
+    background-color: #c9232c;
+}
+
+.black-cont{
+    background-color: #000000;
+}
+
+.description{
+    padding-left: 10%; padding-right: 10%;
+    color: #ffffff;
+    text-align: justify;
+    text-align-last: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12pt;
+    /* line-height: 30vh; */
+
+}
+
+.title{
+    font-size: 30pt;
+}
