@@ -8,32 +8,48 @@
 
 body{
     background-color: #ffffff;
+    margin: 0%;
 }
 
 .header{
     display: grid;
     grid-template-areas: 'left logo right';
     height: 25vh;
+    /* background-color: #000000; */
+    grid-gap: 0%;
 }
 
-.left{
-    width: 33vh;
+.leftCont{
+    width: 33.5vw;
 }
 
 .logo{
     grid-area: logo;
-    /* background-color: #000000; */
-    padding: 5%;
+    /* background-color: #4400ff; */
+    /* background-image: url(./Assets/SVG/logoNavidad.svg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%; */
+
+    width: 33vw;
+}
+.logoImg{
+    position: absolute;
+    /* margin: 5vh; */
+    max-width: 20vw;
+    max-height: 25vh;
+    left: 40vw;
 }
 
-.right{
-    width: 33vh;
+.rightCont{
+    width: 33.5vw;
+    position: relative;
 }
 
 .content{
     display: grid;
     height: 75vh;
     grid-template-areas: 'identidad productos contacto';
+    
 }
 
 .init-cont{
@@ -42,14 +58,19 @@ body{
     'description-area';
 }
 
+.init-cont:hover{
+    background-color: #000000;
+}
 .slide-show{
     grid-area: slideshow;
     height: 50vh;
+    /* background-image: url('./prueba.jpg'); */
 }
 
 .description{
     grid-area: description-area;
     height: 25vh;
+    /* height: 100%; */
 }
 
 .red-cont{
@@ -68,9 +89,153 @@ body{
     font-family: 'Roboto', sans-serif;
     font-size: 12pt;
     /* line-height: 30vh; */
-
 }
 
 .title{
-    font-size: 30pt;
+    padding-top: 5%;
+    font-size: 25pt;
+}
+.black-title{
+    font-size: 25pt;
+}
+
+.topLeft{
+    width: 33%;
+    margin-left: -1%;
+    /* position: absolute; */
+    top: 0%;
+    height: 6.5vh;
+}
+.topLeftImg{
+    position: absolute;
+    max-width: 33vw;
+}
+.botRight{
+    max-width: 33.5vw;
+    margin-right: -1%;
+    position: absolute;
+    bottom: -1%;
+}
+
+.gallery {
+  background: black;
+}
+
+.gallery-cell {
+  width: 100%;
+  height: 400px;
+  
+}
+
+.gallery-cell img {
+  display: block;
+  max-height: 400px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+.whatsTr{
+    background-color: #25D366;
+    /* margin-left: 10%; */
+    /* position: relative; */
+    /* top: 16vh; */
+    /* left: 5vw;  */
+    height: 5vh;
+    width: 5vh; 
+    /* margin: auto; */
+    /* background-image: url('./Assets/SVG/whatsIcon.svg'); */
+    /* background-repeat: no-repeat; */
+    border-radius: 1vh;
+    top: 5vw;
+    position: absolute;
+    left: 2vh;
+    transition: width 0.5s;
+}
+
+.whatsIcon{
+    background-image: url('./Assets/SVG/whatsGrayIcon.svg');
+    height: 5vh;
+    width: 5vh;
+    background-repeat: no-repeat;
+    /* position: absolute; */
+    position: absolute;
+    top: 5vw;
+}
+
+.whatsText{
+    visibility: hidden;
+}
+.whatsTr:hover{
+    /* margin-left: 0%; */
+    width: 25vh;
+}
+
+.whatsTr:hover .whatsText::after{
+    content: "Contactanos";
+    visibility: visible;
+}
+
+.whatsTr:hover .whatsText::before{
+  content: "";
+}
+
+.whatsIcon:hover{
+    background-image: url('./Assets/SVG/whatsGreenIcon.svg');
+}
+
+#currentBet:hover{
+  box-shadow: 0 0 4px #ffffff, 0 0 16px #633395, 0 0 20px #633395, 0 0 40px #633395;
+  background-color: #A378D1;
+}
+
+#currentBet:hover .betText:after{
+    content: "Undo?";
+}
+
+#currentBet:hover .betText:before{
+    content: "";
+}
+
+.menuBtn {
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    background-image: url('./Assets/SVG/menuIcon.svg');
+    height: 5vh;
+    width: 5vh;
+    background-repeat: no-repeat;
+    /* position: absolute; */
+    position: absolute;
+}
+
+.navMenu {
+  position: relative;
+  display: inline-block;
+}
+
+.menuContent {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.menuContent a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.menuContent a:hover {background-color: #f1f1f1}
+
+.navMenu:hover .menuContent {
+  display: block;
+}
+
+.navMenu:hover .menuBtn {
+  background-color: #3e8e41;
 }
