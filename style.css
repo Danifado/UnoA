@@ -38,6 +38,7 @@ body{
     max-width: 20vw;
     max-height: 25vh;
     left: 40vw;
+    top: 5vh;
 }
 
 .rightCont{
@@ -53,6 +54,7 @@ body{
 }
 
 .init-cont{
+    background-color: #5c3a3a;
     display: grid;
     grid-template-areas: 'slideshow'
     'description-area';
@@ -61,6 +63,7 @@ body{
 .init-cont:hover{
     background-color: #000000;
 }
+
 .slide-show{
     grid-area: slideshow;
     height: 50vh;
@@ -133,14 +136,15 @@ body{
   max-width: 100%;
   margin: 0 auto;
 }
+
 .whatsTr{
-    background-color: #25D366;
-    /* margin-left: 10%; */
+    background-color: gray;
+    margin-left: -2%;
     /* position: relative; */
     /* top: 16vh; */
     /* left: 5vw;  */
     height: 5vh;
-    width: 5vh; 
+    width: 25vh; 
     /* margin: auto; */
     /* background-image: url('./Assets/SVG/whatsIcon.svg'); */
     /* background-repeat: no-repeat; */
@@ -162,37 +166,8 @@ body{
 }
 
 .whatsText{
-    visibility: hidden;
-}
-.whatsTr:hover{
-    /* margin-left: 0%; */
-    width: 25vh;
-}
-
-.whatsTr:hover .whatsText::after{
-    content: "Contactanos";
     visibility: visible;
-}
-
-.whatsTr:hover .whatsText::before{
-  content: "";
-}
-
-.whatsIcon:hover{
-    background-image: url('./Assets/SVG/whatsGreenIcon.svg');
-}
-
-#currentBet:hover{
-  box-shadow: 0 0 4px #ffffff, 0 0 16px #633395, 0 0 20px #633395, 0 0 40px #633395;
-  background-color: #A378D1;
-}
-
-#currentBet:hover .betText:after{
-    content: "Undo?";
-}
-
-#currentBet:hover .betText:before{
-    content: "";
+    margin-left: 30%;
 }
 
 .menuBtn {
@@ -238,4 +213,19 @@ body{
 
 .navMenu:hover .menuBtn {
   background-color: #3e8e41;
+}
+
+.whatsText{
+    margin-top: 1vh;
+}
+
+.whatsText .text-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.whatsText .letter {
+  transform-origin: 50% 100%;
+  display: inline-block;
+  line-height: 1em;
 }
