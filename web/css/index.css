@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+body {
+    background-color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    margin: 0%;
+}
+
+
+
+
+/* ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+
+h2,
+h3,
+a {
+	color: #34495e;
+}
+
+a {
+	text-decoration: none;
+}
+
+
+
+
+.main-nav {
+	margin-top: 5px;
+
+}
+.logo a,
+.main-nav a {
+	padding: 10px 15px;
+	text-transform: uppercase;
+	text-align: center;
+	display: block;
+}
+
+.main-nav a {
+	color: #000000;
+	font-size: .99em;
+}
+
+.main-nav a:hover {
+	color: #FF0000;
+	text-decoration: underline;
+}
+
+
+
+.header {
+	padding-top: .5em;
+	padding-bottom: .5em;
+	background-color: rgb(255,255,255);
+	background-color: linear-gradient(180deg, rgb(255, 255, 255, 100) , rgba(0,0,0,0) 100%); 
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+.logoImg{
+	background-image: url('./Assets/SVG/logoNavidad.svg');
+	background-repeat: no-repeat;
+
+} */
+/* ================================= 
+  Media Queries
+==================================== */
+/* 
+
+
+
+@media (min-width: 769px) {
+	.header,
+	.main-nav {
+		display: flex;
+	}
+	.header {
+		flex-direction: column;
+		align-items: center;
+    	.header{
+		width: 80%;
+		margin: 0 auto;
+		max-width: 100vh;
+	}
+	}
+
+}
+
+@media (min-width: 1025px) {
+	.header {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+} */
+
+/* nav menu */
+
+
+/* Footer */
+
+.footer{
+	display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(2,auto);
+	/* grid-template-columns: 30% 40% 30% ; */
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	background-color: rgb(153, 149, 149);
+	/* height: 2.5rem; */
+    padding-bottom: 5%;
+    font-size: 11pt;    
+}
+
+.footer > * {
+    padding: 7%;
+    padding-top: 5%;
+    padding-bottom: 2%;
+}
+
+.direccion{
+	display: grid;
+	grid-template-columns: auto auto;
+}
+.fCenter{
+	display: grid;
+	grid-template-columns: repeat(3,auto);
+    display: none;
+}
+li{
+	list-style-type: none;
+	text-transform: uppercase;
+}
+
+.fRight{
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+}
+.fRight p{
+    font-size: 8pt;
+}
+.iconosRedes{
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    padding-left: 5%;
+    justify-content: center;
+    align-content: center;
+    gap: 5%;
+    margin-left: 5%;
+}
+.iconosRedes img{
+    min-width: 35px;
+}
+
+.botRight{
+	position: absolute;
+	bottom: 0;
+    right: 0;
+	max-width: 60%;
+}
+
+h4{
+    padding-bottom: 2%;
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+}
+
+.search-container button {
+    float: right;
+    padding: 6px 10px;
+    margin-top: 8px;
+    margin-right: 16px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+}
+
+.search-container button:hover {
+    background: #ccc;
+}
+
+.search-container input[type=text] {
+    margin-top: 5%;
+    height: 30px;
+    font-size: 17px;
+    border: none;
+}
