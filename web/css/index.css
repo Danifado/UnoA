@@ -175,29 +175,10 @@ li{
 h4{
     padding-bottom: 2%;
 }
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
 
-}
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-
-}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-
-}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-
+.search-container {
+	display: none;
 }
 
 .search-container button {
@@ -220,4 +201,80 @@ h4{
     height: 30px;
     font-size: 17px;
     border: none;
+}
+
+.fa {
+	color: black;
+	height: 25px;
+	width: 25px;
+}
+/* END Footer */
+
+/* Header */
+
+.header {
+	display: grid;
+	grid-template-columns: 15% 35% 17.5% 17.5% 15%;
+	grid-auto-flow: column;
+	align-items: center;
+	justify-items: center;
+}
+
+.headIcon{
+	max-height: 25px;
+	max-width: 25px;
+}
+
+	/* NavBar */
+.navBar a{
+	display: block;
+	color: black;
+	text-align: center;
+	padding: 5%;
+	text-decoration: none;
+	font-size: 20pt;
+}
+
+.navBar a:hover{
+	text-decoration: underline;
+}
+
+.navBar .icon{
+    float: left;
+    display: block;
+}
+/* .navBar a.active{
+	color: red;
+} */
+
+	/* END NavBar */
+/* END Header */
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+	.headIcon{
+		max-height: 40px;
+		max-width: 40px;
+	}
 }
