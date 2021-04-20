@@ -20,6 +20,8 @@ footer{
 }
 
 .f-distributed{
+	display: grid;
+	grid-template-columns: auto;
 	position: relative;
 	background-color: rgb(153, 149, 149);
 	box-sizing: border-box;
@@ -27,11 +29,7 @@ footer{
 	padding: 20px 40px 40px 40px;;
     font-size: 11pt;
 }
-/* footer > * {
-    padding: 7%;
-    padding-top: 5%;
-    padding-bottom: 2%;
-} */
+
 
 .direccion{
 	display: grid;
@@ -52,6 +50,10 @@ footer{
 	grid-template-rows: repeat(3, auto);
 }
 
+.f-left-grid p{
+	font-size: 10pt;
+}
+
 
 .f-center-grid{
 	display: grid;
@@ -66,9 +68,6 @@ footer{
 .f-center-grid * li{
 	font-size: 8pt;
 	padding: 0;
-}
-.f-center-grid > *{
-	padding-left: 10%;
 }
 
 
@@ -111,13 +110,19 @@ li{
 	max-height: 730px;
 }
 
+.botRightPc{
+	display: none;
+	position: absolute;
+	bottom: 0;
+    right: 0;
+	max-width: 60%;
+	max-height: 730px;
+}
+
 h4{
     padding-bottom: 2%;
 }
 
-.direccion p{
-	padding-right: 20%;
-}
 /* END Footer */
 
 /* Header */
@@ -172,27 +177,25 @@ header * {
 	}
 }
 /* Medium devices (tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 780px) {
 	.f-distributed {
+		grid-template-columns: 30% 40% 25%;
 		justify-content: space-evenly;
 	}
-	/* .botRight { display: block;} */
 
 	.f-left{
 		display: inline-block;
 		vertical-align: top;
-		width: 30%;
 	}
+
 	.f-center{
 		display: inline-block;
 		vertical-align: top;
-		width: 30%;
 	}
 
 	.f-right{
 		display: inline-block;
 		vertical-align: top;
-		width: 30%;
 	}
 
 	.f-right-grid {
@@ -201,7 +204,7 @@ header * {
 	}
 	
 	.f-right-grid p{
-		font-size: 10pt;
+		font-size: 8pt;
 	}
 	
 	.f-right-grid h4{
@@ -209,7 +212,7 @@ header * {
 	}
 
 	.iconosRedes{
-		padding-top: 25px;
+		padding-top: 0;
 		padding-left: 0;
 		margin-left: 0;
 	}
@@ -218,9 +221,13 @@ header * {
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-	/* body{
-		background-color:brown;
-	} */
+	.f-distributed {
+		padding-bottom: 55px;
+	}
+	
+	.botRight { display: none;}
+
+	.botRightPc { display: block;}
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -230,7 +237,7 @@ header * {
 	} */
 
 	.f-distributed {
-		padding-bottom: 75px;
+		padding-bottom: 35px;
 	}
 }
 
