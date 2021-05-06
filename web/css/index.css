@@ -14,26 +14,26 @@
 }
 
 .aplicaciones-cont {
-    padding-left: 2%;
-    padding-right: 2%;
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-bottom: 2%;
 }
 
 .aplicaciones-cont:nth-child(2), .aplicaciones-cont:nth-child(4){
-    padding-left: 1%;
+    padding-left: 2%;
 }
 
 .aplicaciones-cont:first-child, .aplicaciones-cont:nth-child(3){
-    padding-right: 1%;
+    padding-right: 2%;
 }
 
 .aplicaciones-text {
     margin-top: 4%;
     width: -webkit-fit-content;
     width: -moz-fit-content;
-    top: 20px;
-    font-size: 2.5rem;
-    font-weight: 900;
     background-color: #fff;
+    font-size: 0.8rem;
+    font-weight: 900;
     padding: 0.5em;
     text-align: left;
     padding-bottom: 0.2em;
@@ -44,18 +44,18 @@
 }
 
 .image-block {
-    text-align: left;
-    min-height: 300px;
-    min-width: 500px;
+    display: block;
+    text-align: center;
+    /* min-width: 175px; */
     position: relative;
     text-align: right;
     overflow: hidden;
 }
+
 .image-block img{
-    position: absolute;
-    right: 7%;
-    top: -75px;
-    max-width: 450px;
+    display: inline-block;
+    margin-top: 5%;
+    max-width: 100%;
 }
 
 #inyeccion-grid > *:first-child{
@@ -74,47 +74,23 @@
     background-color: #feea16;
 }
 
-#inyeccion-grid .text-block{
-    border-left: 11px solid#f08328;
+.text-block{
+    text-align: left;
+    padding: 5%;
 }
 
-#soplado-grid .text-block{
-    border-left: 11px solid#d5396b;
+.opacity-content{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 350ms;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 999;
 }
-
-#extrusion-grid .text-block{
-    border-left: 11px solid#4c9bd4;
-}
-
-#comercializacion-grid .text-block{
-    border-left: 11px solid#feea16;
-}
-
-/* .inyeccion-grid {
-    background-color: #f08328;
-}
-
-.soplado-grid {
-    background-color: #d5396b;
-}
-
-.extrusion-grid {
-    background-color: #4c9bd4;
-}
-
-.comercializacion-grid {
-    background-color: #feea16;
-} */
-
-.text-block {
-    padding-left: 5%;
-    margin-top: 5%;
-    margin-bottom: 5%;
-    margin-left: 5%;
-}
-
-
-
 @media only screen and (min-width: 550px) {
 
 }
@@ -125,7 +101,64 @@
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
+    
+    .aplicaciones-text {
+        margin-top: 4%;
+        width: -webkit-fit-content;
+        width: -moz-fit-content;
+        top: 20px;
+        font-size: 2.5rem;
+        font-weight: 900;
+        background-color: #fff;
+        padding: 0.5em;
+        text-align: left;
+        padding-bottom: 0.2em;
+        padding-top: 0.2em;
+        border-radius: 0 13px 13px 0;
+        -webkit-box-shadow: 3px 3px 5px -3px #000000; 
+        box-shadow: 3px 3px 5px -3px #000000;
+    }
 
+    .image-block {
+        text-align: left;
+        min-height: 300px;
+        min-width: 400px;
+        position: relative;
+        text-align: right;
+        overflow: hidden;
+    }
+
+    .image-block img{
+        display: none;
+        position: absolute;
+        right: 7%;
+        top: -75px;
+        max-width: 450px;
+    }
+
+    #inyeccion-grid .text-block{
+        border-left: 11px solid#f08328;
+    }
+    
+    #soplado-grid .text-block{
+        border-left: 11px solid#d5396b;
+    }
+    
+    #extrusion-grid .text-block{
+        border-left: 11px solid#4c9bd4;
+    }
+    
+    #comercializacion-grid .text-block{
+        border-left: 11px solid#feea16;
+    }
+
+    .text-block {
+        padding-left: 5%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        margin-left: 5%;
+    }
+    
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
