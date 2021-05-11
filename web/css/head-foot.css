@@ -99,7 +99,7 @@ li{
     margin-left: 5%;
 }
 .iconosRedes img{
-    min-width: 35px;
+	width: 35px;
 }
 
 .botRight{
@@ -140,6 +140,14 @@ header * {
 	max-height: 150px;
 }
 
+.headLogo{
+	z-index: 0;
+	max-width: 150px;
+}
+
+header a{
+	z-index: 999;
+}
 .headIcon{
 	max-height: 25px;
 	max-width: 25px;
@@ -160,7 +168,7 @@ header * {
 	background-color: black;
 	height: 100vh;
 	width: 0;
-	position: absolute;
+	position: fixed;
 	z-index: 1000;
 	top: 0;
 	left: 0;
@@ -170,7 +178,10 @@ header * {
 }
 
 #side-nav-bar a{
-	padding: 8px 8px 8px 32px;
+	text-align: center;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	padding: 8px 8px 8px 8px;
 	text-decoration: none;
 	font-size: 25px;
 	color: #818181;
@@ -182,6 +193,10 @@ header * {
 	color: #f1f1f1;
 }
 
+.menu-icon:hover{
+	color: black;
+	-webkit-text-stroke: 1px rgb(52, 52, 52);
+}
 #side-nav-bar .close-btn{
 	position: absolute;
 	top: 0;
@@ -222,7 +237,11 @@ header * {
 	.f-distributed {
 		padding-bottom: 55px;
 	}
+	.headLogo{
+		max-width: none;
+	}
 }
+
 /* Medium devices (tablets, 768px and up) */
 @media only screen and (min-width: 780px) {
 	.f-distributed {
