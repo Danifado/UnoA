@@ -3,5 +3,5 @@ fetch("/flipbook/flipbook.html")
     return response.text()
 })
 .then(data => {
-    document.querySelector("flipbook").innerHTML = data;
+    document.querySelector("#pc-flipbook").innerHTML = data;
 });

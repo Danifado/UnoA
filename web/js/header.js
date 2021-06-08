@@ -2,7 +2,6 @@ function openNav(){
     document.querySelector("#side-nav-bar").style.width = "80%";
     document.querySelector(".opacity-content").style.visibility = "visible";
     document.querySelector(".opacity-content").style.opacity = "100";
-    
 }
 
 function closeNav(){
