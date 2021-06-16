@@ -29,3 +29,11 @@ fetch("/flipbook/flipbook-mobile.html")
 pcMediaQuery.addListener(flipbookImportHandler);
 
 flipbookImportHandler(pcMediaQuery);
+
+
+$(window).bind('keydown', function(e){
+    if (e.keyCode==37)
+    $('flipbook .flipbook').turn('previous');
+    else if (e.keyCode==39)
+    $('flipbook .flipbook').turn('next');
+});

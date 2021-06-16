@@ -55,6 +55,22 @@ function closeNav(){
   document.querySelector(".opacity-content").style.opacity = "0";
 }
 
+ 
+// Get HTML head element
+var head = document.getElementsByTagName('HEAD')[0]; 
+
+// Create new link Element
+var link = document.createElement('link');
+
+// set the attributes for link element 
+link.rel = 'stylesheet'; 
+
+link.type = 'text/css';
+
+link.href = '/css/head-foot.css'; 
+
+// Append link element to HTML head
+head.appendChild(link); 
 
 headerMediaQuery.addListener(headerImportHandler);
 
