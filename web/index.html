@@ -177,27 +177,8 @@
       <div style="padding-top: 10%">
         <span> CERTIFICADOS </span>
       </div>
-      <div
-        style="
-        padding: 2.5%;
-        display: grid;
-        grid-template-columns: 47.5% 47.5% ;
-        gap: 2.5%;
-        height: 100vh;
-        "
-      >
-        <iframe 
-          src="https://drive.google.com/file/d/19vVvQCPyaKQNzRgP8N7sExqE40xMB54C/view?usp=sharing"
-          frameborder="0"
-          width="100%"
-          height="100%"
-        ></iframe>
-        <iframe
-          src="https://drive.google.com/file/d/1HGWp8S_TbtHGhVwPDftxJuXv0TYDc5GY/view?usp=sharing"
-          frameborder="0"
-          width="100%"
-          height="100%"
-        ></iframe>
+      <div class="docs-cont">
+
       </div>
     </div>
     <div class="products-cont">
@@ -309,43 +290,6 @@
         ],
         complete: loadPCApp,
       });
-      yepnope({
-        test: Modernizr.csstransforms,
-        yep: ["https://wfsites.websitecreatorprotool.com/44ceef8d.com/turn.js	"],
-        nope: [
-          "https://wfsites.websitecreatorprotool.com/44ceef8d.com/turn.html4.min.js",
-        ],
-        both: [
-          "https://wfsites.websitecreatorprotool.com/44ceef8d.com/basic.css",
-        ],
-        complete: loadMobileApp,
-      });
-
-      function loadMobileApp() {
-        var flipbookEL = $("flipbook-mobile .flipbook")[0];
-        console.log(flipbookEL.clientWidth);
-        window.addEventListener("resize", function (e) {
-          flipbookEL.style.width = "";
-          flipbookEL.style.height = "";
-          $(flipbookEL).turn(
-            "size",
-            flipbookEL.clientWidth,
-            flipbookEL.clientHeight
-          );
-        });
-
-        $(flipbookEL).turn({
-          elevation: 50,
-
-          gradients: true,
-
-          display: "single",
-
-          autoCenter: true,
-
-          acceleration: true,
-        });
-      }
       function loadPCApp() {
         var flipbookEL = $("flipbook .flipbook")[0];
         console.log(flipbookEL.clientWidth);

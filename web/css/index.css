@@ -133,6 +133,17 @@ p {
   );
 }
 
+.docs-cont {
+  padding: 2.5%;
+  display: grid;
+  gap: 2.5%;
+  grid-template-columns: auto;
+}
+
+.docs-cont > *{
+  height: 80vh;
+}
+
 @media only screen and (min-width: 550px) {
 
 }
@@ -199,13 +210,8 @@ p {
   }
   
   .products-cont {
-    display: flex;
-    justify-content: center;
-  
-  }
-  
-  .products-cont div{
-    width: 33%;
+    display: grid;
+    grid-template-columns: auto;
   }
   
   .humanware-cont span{
